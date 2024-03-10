@@ -1,0 +1,60 @@
+const users = [
+  {
+    id: 1,
+    ad: "Ali",
+    cinsiyet: "e",
+    yas: "23",
+    baslamaTarihi: "2010",
+    bitirmeTarihi: "2014",
+  },
+  {
+    id: 2,
+    ad: "Ahmet",
+    cinsiyet: "e",
+    yas: "23",
+    baslamaTarihi: "2010",
+    bitirmeTarihi: "2014",
+  },
+  {
+    id: 3,
+    ad: "Veli",
+    cinsiyet: "e",
+    yas: "23",
+    baslamaTarihi: "2010",
+    bitirmeTarihi: "2014",
+  },
+  {
+    id: 4,
+    ad: "Ayse",
+    cinsiyet: "k",
+    yas: "23",
+    baslamaTarihi: "2010",
+    bitirmeTarihi: "2014",
+  },
+  {
+    id: 5,
+    ad: "Fatma",
+    cinsiyet: "k",
+    yas: "23",
+    baslamaTarihi: "2010",
+    bitirmeTarihi: "2014",
+  },
+  {
+    id: 6,
+    ad: "Zeyenp",
+    cinsiyet: "k",
+    yas: "23",
+    baslamaTarihi: "2010",
+    bitirmeTarihi: "2014",
+  },
+  {
+    id: 7,
+    ad: "Hasan",
+    cinsiyet: "e",
+    yas: "29",
+    baslamaTarihi: "2010",
+    bitirmeTarihi: "2014",
+  },
+];
+
+export default users
