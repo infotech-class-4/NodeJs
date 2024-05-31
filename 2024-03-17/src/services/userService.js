@@ -13,6 +13,7 @@ export const register = async (req, res) => {
 
     res.status(200).json(data);
   } catch (error) {
+    console.log(error);
     res.status(400).json({ message: "User can not created." });
   }
 };
@@ -82,4 +83,14 @@ export const remove = async (req, res) => {
   } catch (error) {
     return res.status(404).json({ message: "Users could not update." });
   }
+};
+
+export const checkUserByToken = async (req, res) => {
+  const headerAuth = req.headers["authorization"];
+
+  const token = headerAuth.split(" ")[1];
+
+  const user = jwt.decode(token);
+
+  res.json({ ...user, token });
 };

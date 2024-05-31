@@ -25,8 +25,6 @@ const userShcema = new mongoose.Schema({
   },
 });
 
-
-
 userShcema.pre("save", function (next) {
   if (this.password) {
     this.password = hash(this.password);
@@ -38,9 +36,8 @@ userShcema.pre("save", function (next) {
 //pass validation
 
 userShcema.methods.validatePassword = function (data) {
-    return bcrypt.compare(data, this.password ) 
-
-}
+  return bcrypt.compare(data, this.password);
+};
 
 const Users = mongoose.model("Users", userShcema);
 
